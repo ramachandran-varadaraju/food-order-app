@@ -22,9 +22,9 @@ const HeaderCartButton = (props) => {
       setBtnIsHighlighted(false);
     }, 300);
 
-    // return () => {
-    //   clearTimeout(timer);
-    // };
+    return () => {
+      clearTimeout(timer);
+    };
   }, [items]);
 
   const numberOfCartItems = ctx.items.reduce((currNumber, item) => {
